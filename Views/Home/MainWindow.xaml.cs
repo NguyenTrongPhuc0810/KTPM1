@@ -11,6 +11,7 @@ namespace VST111.Views
     {
         public MainWindow()
         {
+
             InitializeComponent();
 
             System.Mvc.Engine.Register(this, result => { 
@@ -54,7 +55,7 @@ namespace VST111.Views
 
         private void Function1_Click(object sender, RoutedEventArgs e)
         {
-            var data = new Provider().Select("livestockFacility");
+            var data = new Provider().Select("Facility");
             DataGridTable.ItemsSource = data.DefaultView;
             DataGridTable.Visibility = Visibility.Visible; // Show the DataGrid
         }

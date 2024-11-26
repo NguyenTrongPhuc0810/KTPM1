@@ -16,6 +16,7 @@ namespace VST111.Views.Home
     {
         protected override void RenderCore()
         {
+            
             base.RenderCore();
         }
     }
