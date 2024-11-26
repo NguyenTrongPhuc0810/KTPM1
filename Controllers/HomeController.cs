@@ -14,7 +14,7 @@ namespace VST111.Controllers
         }
         public object Search(string search)
         {
-            return View(Provider.Select("livestockFacility", $"location like '%{search}%'"));
+            return View(Provider.Select("Facility", $"location like '%{search}%'"));
         }
     }
 }
